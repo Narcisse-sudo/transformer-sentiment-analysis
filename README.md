@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="assets/sentiment-banner.jpg" alt="Sentiment Analysis Banner" width="100">
+  <img src="assets/sentiment-banner.jpg" alt="Sentiment Analysis Banner" width="300">
 </p>
