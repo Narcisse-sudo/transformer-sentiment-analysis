@@ -1,10 +1,10 @@
-# Projet Transformer - Classification de sentiments
+# <p align ="center">  Projet Transformer - Classification de sentiments </p>
 
 <p align="center">
   <img src="assets/sentiment-banner.png" alt="Sentiment Analysis Banner" width="320">
 </p>
 
-Implémentation  d'un **Transformer ()Encoder** pour la classification de texte, avec comparaison à des baselines:
+Implémentation  d'un **Transformer (Encoder)** pour la classification de texte, avec comparaison à des baselines:
 - `RNNClassifier` (GRU/LSTM)
 - `TextCNNClassifier`
 - `TransformerClassifier` (basé sur un encodeur Transformer)
