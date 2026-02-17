@@ -4,12 +4,12 @@
   <img src="assets/sentiment-banner.jpg" alt="Sentiment Analysis Banner" width="320">
 </p>
 
-Implémentation from-scratch d'un **Transformer Encoder** pour la classification de texte, avec comparaison à des baselines:
+Implémentation  d'un **Transformer ()Encoder** pour la classification de texte, avec comparaison à des baselines:
 - `RNNClassifier` (GRU/LSTM)
 - `TextCNNClassifier`
 - `TransformerClassifier` (basé sur un encodeur Transformer)
 
-Objectif principal: comparer les performances (qualité/précision et comportement d'entraînement) de plusieurs architectures sur l'analyse de sentiments IMDb.
+Objectifs principals: comprendre les mathématiques derrière les transformers, implémenter, comparer les performances (qualité/précision et comportement d'entraînement) de plusieurs architectures sur l'analyse de sentiments IMDb.
 
 ## Contenu du projet
 
@@ -88,16 +88,12 @@ from src.modeles import TransformerClassifier, RNNClassifier, TextCNNClassifier
 
 Le dataset IMDb (ACL) est utilisé pour l'analyse de sentiments.
 
-Remarques:
-- les données volumineuses (`data/`, `*.gz`) sont ignorées par `.gitignore`
-- pour un dépôt propre, ne pas versionner les fichiers de dataset
-
 ## Comparaison des modèles
 
 Le protocole de comparaison attendu:
 - même prétraitement/tokenisation
 - même split train/test
-- même métrique principale (ex: accuracy, F1)
+- même métrique principale (ex: accuracy, F1, ROC-AUC)
 - comparaison:
   - Transformer Encoder + classifier
   - GRU/LSTM classifier
