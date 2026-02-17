@@ -1,7 +1,7 @@
 # Projet Transformer - Classification de sentiments
 
 <p align="center">
-  <img src="assets/sentiment-banner.jpg" alt="Sentiment Analysis Banner" width="320">
+  <img src="assets/sentiment-banner.png" alt="Sentiment Analysis Banner" width="320">
 </p>
 
 Implémentation  d'un **Transformer ()Encoder** pour la classification de texte, avec comparaison à des baselines:
