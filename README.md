@@ -15,17 +15,28 @@ Objectifs principals: comprendre les mathématiques derrière les transformers, 
 
 ```text
 .
+├── assets/
+├── data/
+├── models/
+├── notebooks/
+│   ├── analyse_sentiment.ipynb        # pipeline de classification de sentiments
+│   └── ProjetTransformer.ipynb        # notebook principal / expérimentation
+├── reports/
+│   ├── analyse_sentiment.pdf
+│   └── ProjetTransformer.pdf
 ├── src/
 │   ├── transformer_modules/
 │   │   ├── __init__.py
 │   │   └── transformer_modules.py    # blocs Transformer (attention, encoder, embeddings...)
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── data.py                   # chargement/preparation IMDb
+│   │   └── train.py                  # train/eval + metriques
 │   └── modeles/
 │       ├── __init__.py
 │       ├── transformer_classifier.py # tête de classification pour l'encodeur Transformer
 │       ├── rnn_classifier.py         # GRU/LSTM
 │       └── cnn_classifier.py         # TextCNN
-├── analyse_sentiment.ipynb           # pipeline de classification de sentiments
-├── ProjetTransformer.ipynb           # notebook principal / expérimentation
 ├── pyproject.toml
 └── uv.lock
 ```
@@ -74,14 +85,22 @@ uv run jupyter lab
 ```
 
 Notebooks principaux:
-- `analyse_sentiment.ipynb`
-- `ProjetTransformer.ipynb`
+- `notebooks/analyse_sentiment.ipynb`
+- `notebooks/ProjetTransformer.ipynb`
 
 Imports recommandés:
 
 ```python
 from src.transformer_modules.transformer_modules import TransformerEncoderModel
 from src.modeles import TransformerClassifier, RNNClassifier, TextCNNClassifier
+```
+
+## Tests
+
+Lancer les tests:
+
+```bash
+uv run pytest
 ```
 
 ## Dataset IMDb
