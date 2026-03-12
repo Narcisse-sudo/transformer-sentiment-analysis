@@ -18,6 +18,6 @@ __all__ = [
     "evaluate",
     "run_model_and_collect",
     "test_metrics_with_time",
-    "train_and_evaluate",
+    "train",
     "train_model",
 ]
