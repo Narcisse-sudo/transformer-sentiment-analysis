@@ -24,6 +24,8 @@ Objectifs principals: comprendre les mathématiques derrière les transformers, 
 ├── reports/
 │   ├── analyse_sentiment.pdf
 │   └── ProjetTransformer.pdf
+├── tests/
+│   └── test_models.py
 ├── src/
 │   ├── transformer_modules/
 │   │   ├── __init__.py
@@ -31,7 +33,7 @@ Objectifs principals: comprendre les mathématiques derrière les transformers, 
 │   ├── utils/
 │   │   ├── __init__.py
 │   │   ├── data.py                   # chargement/preparation IMDb
-│   │   └── train.py                  # train/eval + metriques
+│   │   └── train_and_evaluate.py     # train/eval + metriques
 │   └── modeles/
 │       ├── __init__.py
 │       ├── transformer_classifier.py # tête de classification pour l'encodeur Transformer
