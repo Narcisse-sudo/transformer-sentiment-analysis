@@ -8,8 +8,9 @@ wheels/
 *.gz
 aclImdb
 data/
+models/
+reports/
 .ipynb_checkpoints/
 
 # Virtual environments
 .venv
-
